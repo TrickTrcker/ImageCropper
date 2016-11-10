@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Example - Canvas Cropper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="src/canvascrop.css" >
+
+   </head>
+    <body>
+        <div id="userProfImgFile"></div>
+        <div id="window_upload_file_image"  style="">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="fileUpload btn btn-success">
+                            <i class="icon-ic_btn_upload upload-file-icon"></i>
+                            <span id="crop_image_upload">Upload</span>
+                            <input type="file" class="upload" id="uploads_filefolder_image" style="display: none;" />
+                        </div>   
+                    </div>
+                </div>
+            </div> 
+
+            <div class="">
+                <div class="imageBox">
+                    <div class="thumbBox"></div>
+                    <div class="spinner" style="display: none"></div>
+                </div>
+                <div class="action clearfix" style="margin: 5px 0px 5px;">
+                    <button disabled="true" id="cropping_btn" class="btn btn-success pull-right"> <i class="fa fa-crop"></i> <span id="crop_image_name">Crop</span> </button>
+                    <button disabled="true" type="button"  id="zoom_in_btn" class="zoom_in_btn  btn btn-xs btn-info "><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></button>
+                    <button disabled="true" type="button"  id="zoom_out_btn" class="zoom_out_btn  btn btn-xs btn-info"><span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span></button>
+                    <button disabled="true" id="zoom_reset_btn" class="btn btn-success "> <i class="fa fa-undo"></i> <span id="crop_image_name">Reset</span> </button>
+                    <!--            <input type="button" id="btnZoomIn" value="+" style="float: right">
+                                <input type="button" id="btnZoomOut" value="-" style="float: right">-->
+                </div>
+                <!--        <div class="cropping_content">
+                            <div class="component">
+                                <div class="cropping_overlay">
+                                    <div class="cropping_overlay-inner">
+                                    </div>
+                                </div>
+                                <img id="crop-image"  class="crop-image" src="i/no-image.jpg">
+                            </div>
+                            <div class=" col-md-12 well-sm pull-right" >
+                                <div id="zoom_btn_group" class="btn-group" role="group">
+                                </div>
+                            </div>
+                            <button id="cropping_btn" class="btn btn-success pull-right"> <i class="fa fa-crop"></i> <span id="crop_image_name">Crop</span> </button>
+                
+                            <div class="clearfix"></div>
+                            <div id="event_logs"></div> 
+                        </div>
+                        <div id="croppingModel" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                            </div>
+                        </div>-->
+            </div>
+            <div class="status"></div>
+
+        </div>
+
+    </body>
+    <script src="js/jquery.min.js" type="text/javascript" ></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+    <script src="src/canvascrop.js" type="text/javascript" ></script>
+    <script src="js/script.js" type="text/javascript" ></script>
+</html>
